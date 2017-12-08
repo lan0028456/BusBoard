@@ -12,25 +12,48 @@ log4js.configure({
 const logger = log4js.getLogger();
 logger.debug('Let\'s get start!');
 
-console.log('Please enter the stationsID: ');
-const stationID = readline.prompt();
-//const stationID = '490008660N';
-logger.debug('Input station ID = ' + stationID);
+console.log('Please enter your postcode: ');
+//const postcode = readline.prompt();api.postcodes.io/postcodes/
+const postcode = 'NW5 1TL';
+logger.debug('Input postcode = ' + postcode);
 const appID = '889435f2';
 const appKey = '912066946f556aab9753303523b446d6';
 
-request('https://api.tfl.gov.uk/StopPoint/' + stationID +
-    '/Arrivals?app_id=' + appID +
+request('https://api.postcodes.io/postcodes/' + postcode +
+    '?app_id=' + appID +
     '&app_key=' + appKey, function (error, response, body) {
-    logger.debug('error:', error);
-    logger.debug('statusCode:', response && response.statusCode);
+    logger.debug('error (loading post code):', error);
+    logger.debug('statusCode (loading post code):', response && response.statusCode);
     let data = JSON.parse(body);
-    let list = getBusList(data);
-    displayResult(list)
+    const longitude=data.result.longitude;
+    logger.debug('longitude = ' + longitude);
+    const latitude=data.result.latitude;
+    logger.debug('latitude = ' + latitude);
+    request('https://api.tfl.gov.uk/Stoppoint?lat=' + latitude +
+        '&lon=' + longitude +
+        '&stoptypes=NaptanPublicBusCoachTram', function (error, response, body) {
+        logger.debug('error (loading stations):', error);
+        logger.debug('statusCode (loading stations):', response && response.statusCode);
+        let stationsinfo = JSON.parse(body);
+        getNextBuses(stationsinfo.stopPoints[0].id);
+        getNextBuses(stationsinfo.stopPoints[1].id);
+    });
 });
 
 
 
+
+function getNextBuses(stationID) {
+    request('https://api.tfl.gov.uk/StopPoint/' + stationID +
+        '/Arrivals?app_id=' + appID +
+        '&app_key=' + appKey, function (error, response, body) {
+        logger.debug('error (loading bus info):', error);
+        logger.debug('statusCode (loading bus info):', response && response.statusCode);
+        let data = JSON.parse(body);
+        let list = getBusList(data);
+        displayResult(list)
+    });
+}
 
 function getBusList(data) {
     let list = [];

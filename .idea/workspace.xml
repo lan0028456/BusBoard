@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5be45575-1148-4de7-b1b3-a43c0adeecef" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Part1.js" afterPath="$PROJECT_DIR$/Part1.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Part1.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Part1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Part1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-462">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Part2.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Part2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1749">
+              <caret line="53" column="27" lean-forward="true" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -44,6 +55,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Part1.js" />
+        <option value="$PROJECT_DIR$/node_modules/Part 2.js" />
+        <option value="$PROJECT_DIR$/Part2.js" />
       </list>
     </option>
   </component>
@@ -90,6 +103,11 @@
               <item name="BusBoard" type="b2602c69:ProjectViewProjectNode" />
               <item name="BusBoard" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BusBoard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BusBoard" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -107,6 +125,11 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Work\BusBoard" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -119,7 +142,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.Part2.js">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -162,6 +185,7 @@
       <patterns />
     </configuration>
     <configuration name="Part1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="Part1.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="Part2.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="Part2.js" working-dir="$PROJECT_DIR$" />
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -202,9 +226,14 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.Part1.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.Part2.js" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.Part1.js" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.Part2.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.Part1.js" />
       </list>
     </recent_temporary>
   </component>
@@ -221,12 +250,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512726768839</updated>
-      <workItem from="1512726770644" duration="4821000" />
+      <workItem from="1512726770644" duration="7724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4821000" />
+    <option name="totallyTimeSpent" value="7724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="5750" y="-1682" width="1940" height="2330" extended-state="0" />
@@ -271,10 +300,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Part 2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Part1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Part2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1749">
+          <caret line="53" column="27" lean-forward="true" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
           <folding />
         </state>
       </provider>
